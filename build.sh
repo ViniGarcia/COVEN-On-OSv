@@ -58,11 +58,11 @@ cd $COOV_FOLDER
 cp binary/* $OSV_SDK/modules/click
 cd $OSV_SDK
 ./scripts/build image=click,httpserver-click_plugin,python2x
-#./scripts/gen-vbox-ova.sh
+./scripts/gen-vbox-ova.sh
 if [ ! -e "$OSV_SDK/build/last/usr.img" ]; then
   echo "Error building OSv"
   exit 1
 else
   cp $OSV_SDK/build/last/usr.img $COOV_FOLDER/images/click-on-osv.img
-  #cp $OSV_SDK/build/last/osv.ova $COOV_FOLDER/images/click-on-osv.ova
+  cp $OSV_SDK/build/last/osv.ova $COOV_FOLDER/images/click-on-osv.ova
 fi
