@@ -2,14 +2,14 @@
 
 COVEN-On-OSv (COO) is a novel platform that expands the capabilities of the previously proposed [Click-On-OSv](https://github.com/lmarcuzzo/click-on-osv) [1] platform. In this project, we implemented the concept of Virtual Network Subsystem (VNS) and Packet Processing Subsystem (PPS) from [COmprehensive VirtualizEd NF](https://github.com/ViniGarcia/COVEN) [2-3]. In the current version, the COO enables the users to use two virtual network tools ([VirtIO](https://www.linux-kvm.org/page/Virtio) and [DPDK](https://www.dpdk.org/)) and two packet processing frameworks ([Python 2.7](https://www.python.org/download/releases/2.7) and [Click Modular Router](https://github.com/kohler/click)). These components are compiled into the unikernel [OSv](https://github.com/cloudius-systems/osv).
 
-## Limitations
+## - Limitations
 The compilation has been executed in a Debian 8 environment. An error can be raised when linking DPDK and Click in a compiling environment with Glib > 2.19 (it can be tested with ```ldd -d click``` on the Click binary that should show a libintel_dpdk.so library on the dependencies). The GCC compiler must be at least version 4.8. The GCC versions of 5.x and 6.x raise error while compiling DPDK.
 
-## Platform Usage
+## - Platform Usage
 
 A precompiled version is available for download as a "qcow2" disk or an "ova" appliance. These images and the installation and usage guide are located in [images](./images).
 
-## Platform Compilation
+## - Platform Compilation
 
 "build.sh" script is used to compile DPDK, Click and OSv and provides in **binary** folder the DPDK library (*libintel_dpdk.so*) and Click binary (*click*), as well images in (*images*). Example VNFs can be found in [click_confs](click_confs) folder.
 
@@ -82,7 +82,14 @@ cd osv
 
 Other components (e.g., VirtIO drivers, Python 2.7 framework) are compiled as OSv applications and modules. Thus, they are compiled at the same time as the platform's core operational system.
 
-## References
+## - COVEN-On-OSv Research Group
+
+Vinícius Fülber Garcia (Federal University of Paraná - Brazil)
+Leonardo da Cruz Marcuzzo (Federal University of Santa Maria - Brazil)
+Carlos Raniery Paula dos Santos (Federal University of Santa Maria - Brazil)
+Elias Procópio Duarte Júnior (Federal University of Paraná - Brazil)
+
+## - References
 
 [1] L. da Cruz Marcuzzo, V. Fülber Garcia, V. Cunha, D. Corujo, J. Paulo Barraca, R. Luis Aguiar, A. Egon Schaeffer-Filho, L. Zambenedetti Granville, C. R. Paula dos Santos. "Click-on-osv: A platform for running click-based middleboxes", 2017. IFIP/IEEE Symposium on Integrated Network and Service Management (IM), Lisbon, Portugal, 05-2017.
 
