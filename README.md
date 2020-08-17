@@ -84,10 +84,10 @@ Other components (e.g., VirtIO drivers, Python 2.7 framework) are compiled as OS
 
 ## - COVEN-On-OSv Research Group
 
-Vinícius Fülber Garcia (Federal University of Paraná - Brazil)
-Leonardo da Cruz Marcuzzo (Federal University of Santa Maria - Brazil)
-Carlos Raniery Paula dos Santos (Federal University of Santa Maria - Brazil)
-Elias Procópio Duarte Júnior (Federal University of Paraná - Brazil)
+Vinícius Fülber Garcia (Federal University of Paraná - Brazil)<br/>
+Leonardo da Cruz Marcuzzo (Federal University of Santa Maria - Brazil)<br/>
+Carlos Raniery Paula dos Santos (Federal University of Santa Maria - Brazil)<br/>
+Elias Procópio Duarte Júnior (Federal University of Paraná - Brazil)<br/>
 
 ## - References
 
