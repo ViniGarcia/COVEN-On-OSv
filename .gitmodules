@@ -1,3 +1,9 @@
 [submodule "osv-dpdk"]
 	path = osv-dpdk
 	url = https://github.com/syuu1228/osv-dpdk
+[submodule "click"]
+	path = click
+	url = https://github.com/ViniGarcia/COO-Click
+[submodule "osv"]
+	path = osv
+	url = https://github.com/ViniGarcia/COO-OSv.git
